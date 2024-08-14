@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let variable;
+
+      console.log("Initial type of 'variable':", typeof variable);
+
+      variable = 56;
+      console.log(
+        "Type of 'variable' after assigning a number:",
+        typeof variable
+      );
+
+      variable = "Hello, world!";
+      console.log(
+        "Type of 'variable' after assigning a string:",
+        typeof variable
+      );
+
+      variable = true;
+      console.log(
+        "Type of 'variable' after assigning a boolean:",
+        typeof variable
+      );
+
+      variable = { name: "Alice", age: 25 };
+      console.log(
+        "Type of 'variable' after assigning an object:",
+        typeof variable
+      );
+
+      variable = [1, 2, 3, 4, 5];
+      console.log(
+        "Type of 'variable' after assigning an array:",
+        typeof variable
+      );
+
+      variable = function () {
+        return "I'm a function!";
+      };
+      console.log(
+        "Type of 'variable' after assigning a function:",
+        typeof variable
+      );
+
+      variable = null;
+      console.log("Type of 'variable' after assigning null:", typeof variable);
+    </script>
+  </body>
+</html>

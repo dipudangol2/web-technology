@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in to Awesome Cargo</title>
-  </head>
-  <body>
-    <form action="login.php" method="POST">
-      <span>Username</span>
-      <input type="text" name="username" id="username" placeholder="Username" />
-      <span>Password</span>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="Password"
-      />
-      <input type="checkbox" name="remember" id="remember" /><span
-        >Remember me</span
-      >
-      <button type="submit">Login</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Register for Cargo Service</h2>
+
+    <form action="submit_registration.php" method="post">
+        
+        <!-- Input Text for Full Name -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+
+        <!-- Input Text for Username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <!-- Input Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Input Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Input Date -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Radio Buttons for Gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Checkbox for Terms and Conditions -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms and Conditions</label>
+        <br><br>
+
+        <!-- Text Area for Additional Information -->
+        <label for="info">Additional Information:</label>
+        <br>
+        <textarea id="info" name="info" rows="4" cols="50" placeholder="Enter any additional information here..."></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+
     </form>
-  </body>
+
+</body>
 </html>
